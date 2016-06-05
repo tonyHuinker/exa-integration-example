@@ -1,0 +1,16 @@
+<h1>{{.Title}}</h1>
+
+<p>[<a href="/input/">search again</a>]</p>
+
+<body>
+    <div>
+    	<h2>User {{.Title}} launched {{.Launches}} with an avg login time of {{.LoginAvg}} and an avg load time of {{.LoadAvg}}</h2>
+    </div>
+    <div>
+    	<h2>Records</h2>
+    	<hr>
+    	{{range $element := .Records}}
+        	<div>{{$element}}</div>
+    	{{end}}
+    </div>
+</body>
